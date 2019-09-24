@@ -1,10 +1,10 @@
 ---
 label: Gallery
-hide_body: false
+hide_body: true
 fields:
 - type: text
   name: title
-  label: title
-- type: datetime
-  name: date
-  label: date
+  label: Title
+- name: landscape
+  type: boolean
+  label: Landscape
