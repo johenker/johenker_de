@@ -1,20 +1,8 @@
 baseURL = "http://johenker.de/"
+disableKinds = ["taxonomy", "taxonomyTerm", "section", "RSS"]
 languageCode = "de"
 title = "Jo Henker Fotografie"
-disableKinds = ["taxonomy", "taxonomyTerm", "section", "RSS"]
 [[menu.main]]
 name = "Eine Gallerie"
 url = "/portfolio/gallery1"
-weight = 2
-[[menu.main]]
-name = "About"
-url = "/about"
-weight = 3
-[[menu.main]]
-name = "Impressum"
-url = "/impressum"
-weight = 4
-[[menu.main]]
-name = "Datenschutz"
-url = "/datenschutz"
-weight = 5
+weight = 1

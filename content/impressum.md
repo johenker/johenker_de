@@ -1,9 +1,11 @@
 ---
-title: "Impressum"
-date: 2019-09-23T11:15:21+02:00
-draft: false
----
+title: Impressum
+date: 2019-09-23T09:15:21.000+00:00
+menu:
+  main:
+    weight: 3
 
+---
 # Impressum
 ## Angaben gemäß § 5 TMG
 

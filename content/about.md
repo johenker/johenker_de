@@ -1,9 +1,11 @@
 ---
-title: "About"
-date: 2019-09-18T23:21:17+02:00
-draft: false
----
+title: About
+date: 2019-09-18T21:21:17.000+00:00
+menu:
+  main:
+    weight: 2
 
+---
 # Über
 Lorem ipsum delorem
 

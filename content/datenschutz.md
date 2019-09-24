@@ -1,9 +1,11 @@
 ---
-title: "Datenschutz"
-date: 2019-09-18T23:21:17+02:00
-draft: false
----
+title: Datenschutz
+date: 2019-09-18T21:21:17.000+00:00
+menu:
+  main:
+    weight: 4
 
+---
 # Datenschutzerklärung
 Verantwortlicher im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung (DSGVO), ist:\
 Joachim Henker
