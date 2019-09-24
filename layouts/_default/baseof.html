@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ block "title" . }}
+      {{ .Site.Title }}
+    {{ end }}</title>
+
+    <!-- <link rel="stylesheet" href="{{ "css/bootstrap.min.css" | absURL }}"> -->
+    {{ $style := resources.Get "sass/main.scss" | toCSS | postCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <link rel="stylesheet" href="{{ "css/ekko-lightbox.css" | absURL }}">
+  </head>
+  <body>
+    <div class="container-fluid h-100">
+      <div class="row h-100 no-gutters">
+        <div class="col-12 p-0">
+          {{ partial "sidebar.html" . }}
+        </div>
+
+        <div class="content col-lg pb-4">
+          {{ block "main" . }}
+          {{ end }}
+          <div id="positioner">
+            <a id="back-to-top" href="#" class="btn btn-light back-to-top" role="button">
+          		<span aria-hidden="true">&#8593;</span><span class="sr-only">Back-to-top</span>
+          	</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  {{ partial "scripts.html" . }}
+  {{ block "footer" . }}
+  {{ end }}
+</html>

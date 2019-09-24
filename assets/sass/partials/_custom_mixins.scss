@@ -1,0 +1,41 @@
+//
+//  BOOTSRAP SPACE
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// space(4)
+@function space($spacer) {
+
+  // If the spacer exists in the map.
+  @if map-has-key($spacers, $spacer) {
+
+    // Get the breakpoint value.
+    $spacer-value: map-get($spacers, $spacer);
+
+    // return space value;
+    @return $spacer-value;
+
+  // If the spacer doesn't exist in the map.
+  } @else {
+
+    // Log a warning.
+    @warn 'Invalid spacer: #{$spacer}.';
+  }
+}
+
+
+//
+//  SHADOW
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// @include shadow(3, 5, 10, 2, 0.5)
+@mixin shadow($horiz, $vert, $blur, $spread, $opacity) {
+  // convert values to px units
+  $horiz-len: $horiz * 1px;
+  $vert-len: $vert * 1px;
+  $blur-rad: $blur * 1px;
+  $spread-rad: $spread * 1px;
+
+  -webkit-box-shadow: $horiz-len $vert-len $blur-rad $spread-rad rgba(0,0,0,$opacity);
+  -moz-box-shadow: $horiz-len $vert-len $blur-rad $spread-rad rgba(0,0,0,$opacity);
+  box-shadow: $horiz-len $vert-len $blur-rad $spread-rad rgba(0,0,0,$opacity);
+}

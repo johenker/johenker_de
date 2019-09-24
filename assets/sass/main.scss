@@ -1,0 +1,72 @@
+//
+//    main.scss
+//
+
+@import "custom_variables";
+@import "bootstrap/bootstrap";
+@import 'partials/_bootstrap-mixins';
+@import 'partials/_custom_mixins';
+@import 'partials/_ekko-lightbox';
+@import 'partials/_loading-effect';
+@import 'partials/_sidebar';
+@import 'partials/_grid';
+
+
+body {
+    overflow-y: scroll;
+}
+
+a {
+    text-decoration: none;
+}
+
+// h1 {line-height: 1;}
+
+.container-fluid {
+    padding: $page-padding;
+}
+
+.content {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    a {
+        text-decoration: underline;
+        color: #000;
+
+        &:hover {
+            color: #000;
+        }
+    }
+}
+
+// positioner div for back-to-top button
+#positioner {
+    position: absolute;
+    left: ($logo-width - $page-padding) / 2;
+}
+
+@include respond-below(sm) {
+    #positioner {
+        left: 0;
+    }
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: $back-to-top-bottom-pos;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    color: $color-sidebar;
+    background-color: $white;
+    text-decoration: none;
+    font-size: 1.25rem;
+    padding: 0.19rem 0.6rem;
+    @include shadow(3, 5, 10, 2, 0.5);
+
+    &:hover, &:focus, &:active, &.active {
+        background-color: darken($white, 3%);
+        border-color: darken($white, 10%);
+    }
+}

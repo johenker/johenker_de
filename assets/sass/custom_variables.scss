@@ -1,0 +1,27 @@
+// site structure
+$page-padding: 30px;
+$back-to-top-bottom-pos: 12px;
+$sidebar-padding: 25px;
+$logo-width: 200px;
+$logo-heigth: 98.391px; // depends on $logo-width
+$gutter: 3px;
+
+// colors
+$color-sidebar: #222;
+$navbar-light-color: $color-sidebar;
+$link-hover-color: #fff;
+$grid-hover-darken: 0.5;
+$lightbox-overlay-opacity: 0.75;
+
+// bootstrap config
+$enable-responsive-font-sizes: true;
+$enable-rounded: false;
+
+// font sizes
+$h1-font-size: 1rem;
+$h2-font-size: 1rem;
+$h3-font-size: 1rem;
+$h4-font-size: 1rem;
+$h5-font-size: 1rem;
+$h6-font-size: 1rem;
+$headings-font-weight: 600;

@@ -1,0 +1,28 @@
+<script src="{{ "js/jquery-3.4.1.min.js" | absURL }}"></script>
+<script src="{{ "js/bootstrap.min.js" | absURL }}"></script>
+<script src="{{ "js/ekko-lightbox.min.js" | absURL }}"></script>
+<script src="{{ "js/masonry.pkgd.min.js" | absURL }}"></script>
+<script src="{{ "js/imagesloaded.pkgd.min.js" | absURL }}"></script>
+<script src="{{ "js/modernizr-custom.js" | absURL }}"></script>
+{{ $script := resources.Get "js/classie.js" | resources.Minify | resources.Fingerprint }}
+<script src="{{ $script.Permalink }}"></script>
+{{ $script := resources.Get "js/AnimOnScroll.js" | resources.Minify | resources.Fingerprint }}
+<script src="{{ $script.Permalink }}"></script>
+<script>
+    $(document).ready(function(){
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 400);
+            return false;
+        });
+    });
+</script>

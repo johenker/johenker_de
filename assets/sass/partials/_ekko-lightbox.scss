@@ -1,0 +1,25 @@
+.ekko-lightbox {
+    .modal-content {
+        background-color: transparent;
+        border: 0;
+    }
+
+    .modal-body,
+    .modal-footer {
+        padding: 0;
+    }
+
+    .modal-body {
+        padding-bottom: space(1);
+    }
+
+    .modal-footer {
+        border: 0;
+        line-height: 1;
+        color: #fff;
+    }
+}
+
+.modal-backdrop.show {
+    opacity: $lightbox-overlay-opacity !important;
+}
