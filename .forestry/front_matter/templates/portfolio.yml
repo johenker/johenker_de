@@ -1,4 +1,12 @@
 ---
 label: Portfolio
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: landscape
+  type: boolean
+  label: Landscape
