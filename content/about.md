@@ -6,21 +6,8 @@ menu:
     weight: 2
 
 ---
-# Über
-Lorem ipsum delorem
 
-## Kontakt
-Lorem ipsum delorem
-
-- erste liste
-- zweite liste
-
-[like this](http://someurl)
-
-<http://someurl>
-
-
-
+# Kontakt
 
 Jo Henker \
 Alicenstraße 20 \
