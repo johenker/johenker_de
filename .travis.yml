@@ -8,6 +8,7 @@ install:
 - sudo dpkg -i hugo*.deb
 - npm ci
 script:
+- npm list --depth=0
 - hugo version
 - hugo
 before_deploy:
