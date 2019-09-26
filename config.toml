@@ -3,6 +3,6 @@ disableKinds = ["taxonomy", "taxonomyTerm", "section", "RSS"]
 languageCode = "de"
 title = "Jo Henker Fotografie"
 [[menu.main]]
-name = "Eine Gallerie"
+name = "Gallerie1"
 url = "/portfolio/gallery1"
 weight = 1
