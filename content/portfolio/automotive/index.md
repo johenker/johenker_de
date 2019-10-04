@@ -1,4 +1,5 @@
 +++
-landscape = false
-title = "Seitentitel"
+landscape = true
+title = "Automotive"
+
 +++
