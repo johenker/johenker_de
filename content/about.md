@@ -3,7 +3,7 @@ title: About
 date: 2019-09-18T21:21:17.000+00:00
 menu:
   main:
-    weight: 1
+    weight: 2
 
 ---
 # Kontakt
