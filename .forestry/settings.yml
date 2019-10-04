@@ -8,7 +8,7 @@ sections:
   path: content/portfolio
   label: Portfolio
   create: documents
-  match: "**/*"
+  match: "*"
   templates:
   - portfolio
 - type: directory
