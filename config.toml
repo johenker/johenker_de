@@ -2,3 +2,6 @@ baseURL = "https://johenker.de/"
 disableKinds = ["taxonomy", "taxonomyTerm", "section", "RSS"]
 languageCode = "de"
 title = "Jo Henker Fotografie"
+[[menu.main]]
+name = "Transportation"
+weight = 2
