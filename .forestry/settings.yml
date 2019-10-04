@@ -4,9 +4,6 @@ auto_deploy: false
 admin_path: "/admin"
 webhook_url: 
 sections:
-- type: document
-  path: content/portfolio
-  label: Portfolio_3
 - type: directory
   path: content/portfolio
   label: Portfolio
