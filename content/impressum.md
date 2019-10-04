@@ -3,7 +3,7 @@ title: Impressum
 date: 2019-09-23T09:15:21.000+00:00
 menu:
   main:
-    weight: 4
+    weight: 5
 
 ---
 # Impressum

@@ -4,4 +4,7 @@ languageCode = "de"
 title = "Jo Henker Fotografie"
 [[menu.main]]
 name = "Transportation"
+weight = 3
+[[menu.main]]
+name = "Musik"
 weight = 2
