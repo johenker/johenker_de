@@ -4,11 +4,24 @@ auto_deploy: false
 admin_path: "/admin"
 webhook_url: 
 sections:
+- type: document
+  path: content/portfolio
+  label: Portfolio_3
+  match: "**/*"
+- type: directory
+  path: content
+  label: Portfolio_2
+  create: all
+  match: "*"
+  templates:
+  - portfolio
 - type: directory
   path: content/portfolio
   label: Portfolio
-  create: all
+  create: documents
   match: "**/*"
+  templates:
+  - portfolio
 - type: directory
   path: content
   label: Pages
