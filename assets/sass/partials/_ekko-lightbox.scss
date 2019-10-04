@@ -13,6 +13,12 @@
         padding-bottom: space(1);
     }
 
+    @include respond-below(xs) {
+        .modal-body {
+            padding-bottom: space(2);
+        }
+    }
+
     .modal-footer {
         border: 0;
         line-height: 1;
