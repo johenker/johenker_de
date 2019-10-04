@@ -10,3 +10,5 @@ fields:
 - name: landscape
   type: boolean
   label: Landscape
+pages:
+- content/portfolio/surfingtrooper/surfing-trooper.md
