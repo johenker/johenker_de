@@ -1,4 +1,4 @@
-baseURL = "http://johenker.de/"
+baseURL = "https://johenker.de/"
 disableKinds = ["taxonomy", "taxonomyTerm", "section", "RSS"]
 languageCode = "de"
 title = "Jo Henker Fotografie"
