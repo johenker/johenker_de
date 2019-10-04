@@ -3,8 +3,8 @@ disableKinds = ["taxonomy", "taxonomyTerm", "section", "RSS"]
 languageCode = "de"
 title = "Jo Henker Fotografie"
 [[menu.main]]
-name = "Transportation"
-weight = 3
+name = "People"
+weight = 1
 [[menu.main]]
-name = "Musik"
+name = "Transportation"
 weight = 2

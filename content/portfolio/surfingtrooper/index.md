@@ -2,6 +2,7 @@
 landscape = false
 title = "Surfing Trooper"
 [menu.main]
-weight = 1
+parent = "People"
+weight = 4
 
 +++
