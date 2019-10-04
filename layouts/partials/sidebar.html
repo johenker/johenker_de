@@ -10,17 +10,18 @@
         </button>
     </div>
 
+    <div class="accordion" id="accordion">
     <ul class="collapse d-md-block px-0 pb-4" id="navbarToggleExternalContent">
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
             {{ if .HasChildren }}
-                <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+                <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}" data-toggle="collapse" data-target="#{{ .Name }}">
                     <a href="#">
                         {{ .Pre }}
                         <span>{{ .Name }}</span>
                     </a>
                 </li>
-                <ul class="sub-menu">
+                <ul class="sub-menu collapse pb-1" id="{{ .Name }}" data-parent="#accordion">
                     {{ range .Children }}
                         <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
                             <a href="{{ .URL }}">{{ .Name }}</a>
@@ -28,7 +29,7 @@
                     {{ end }}
                 </ul>
             {{ else }}
-                <li>
+                <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
                     <a href="{{ .URL }}">
                         {{ .Pre }}
                         <span>{{ .Name }}</span>
@@ -37,4 +38,5 @@
             {{ end }}
         {{ end }}
     </ul>
+    </div>
 </nav>

@@ -1,6 +1,15 @@
 #sidebar {
     ul {
         list-style-type: none;
+        padding-left: 0;
+    }
+
+    li {
+        font-weight: 500;
+    }
+
+    .sub-menu li {
+        font-weight: 300;
     }
 
     a {
