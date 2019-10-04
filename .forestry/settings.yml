@@ -7,7 +7,7 @@ sections:
 - type: directory
   path: content/portfolio
   label: Portfolio
-  create: documents
+  create: all
   match: "*"
   templates:
   - portfolio
