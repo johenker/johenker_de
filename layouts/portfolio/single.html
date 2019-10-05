@@ -5,7 +5,8 @@
       {{ with .Resources.ByType "image" }}
         {{ range . }}
           {{ $name_arr := split .Name "_" }}
-          {{ $title := index (split (index $name_arr 1) ".") 0 }}
+          <!-- {{ $title := index (split (index $name_arr 1) ".") 0 }} -->
+		  {{ $title := strings.TrimSuffix ".jpg" (index $name_arr 1) }}
           {{ $image := .Resize "750x q85" }}
           <div class="grid-item {{ if $landscape }}landscape{{ end }}">
             <a href="{{ .RelPermalink }}" data-toggle="lightbox" data-gallery="gallery" data-footer="{{ $title }}">
@@ -32,9 +33,9 @@
   </script> -->
   <script>
     new AnimOnScroll( document.getElementById( 'grid' ), {
-			minDuration : 0.4,
-			maxDuration : 0.7,
-			viewportFactor : 0.2
+			minDuration : 0.2,
+			maxDuration : 0.5,
+			viewportFactor : 0.15
 		});
   </script>
   <script>
